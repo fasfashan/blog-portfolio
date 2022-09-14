@@ -1,7 +1,7 @@
 import Avatar from "./avatar";
 import Date from "./date";
-import CoverImage from "./cover-image";
 import Link from "next/link";
+import ButtonText from "./button-text";
 
 export default function PostPreview({ title, date, excerpt, author, slug }) {
   return (
@@ -15,8 +15,11 @@ export default function PostPreview({ title, date, excerpt, author, slug }) {
             <a className="hover:underline" dangerouslySetInnerHTML={{ __html: title }} />
           </Link>
         </h3>
-        <div className="text-sm leading-relaxed text-slate-600 mb-4" dangerouslySetInnerHTML={{ __html: excerpt }} />
-        <Avatar author={author} />
+        <div className="text-sm leading-relaxed text-slate-600 mb-8" dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <div className="space-y-4">
+          <ButtonText href={`/posts/${slug}`}>Read Article</ButtonText>
+          <Avatar author={author} />
+        </div>
       </div>
     </article>
   );

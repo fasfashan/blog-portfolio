@@ -8,6 +8,7 @@ import { CMS_NAME } from "../../lib/constants";
 import Header from "../components/header";
 import ListPost from "../components/list-post";
 import Subscribe from "../components/subscribe";
+import Footer from "../components/footer";
 
 export default function Index({ allPosts: { edges }, preview }) {
   const listPost = edges.slice();
@@ -21,9 +22,9 @@ export default function Index({ allPosts: { edges }, preview }) {
         <Intro />
         <section className="grid md:grid-cols-12 grid-cols-4 gap-4 items-start">
           <article className="md:col-span-7 col-span-12">{<ListPost posts={listPost} />}</article>
-
           <Subscribe />
         </section>
+        <Footer />
       </Container>
     </Layout>
   );

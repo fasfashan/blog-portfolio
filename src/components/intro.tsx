@@ -4,10 +4,10 @@ export default function Intro() {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-20 mb-16 md:mb-12">
       <div className="space-y-4">
-        <h1 className="text-6xl md:w-8/12 leading-tight font-bold">User Interface Designer, Front-end Engineer, Writer.</h1>
+        <h1 className="text-6xl lg:w-8/12 leading-tight font-bold">User Interface Designer, Front-end Engineer, Writer.</h1>
         <p className="md:w-8/12 text-lg leading-snug  text-slate-600">I’m Fasha, a UI Designer and Front-end Engineer based in Bogor, Indonesia. Love design, code, and anything about technology.</p>
         <div className="flex space-x-8">
-          <a className="opacity-70 hover:opacity-90" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
+          <a className=" hover:opacity-90" href="https://www.linkedin.com/in/muhamad-fasha-fadillah/">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
               <rect width="40" height="40" rx="20" fill="black" />
               <path
@@ -16,7 +16,7 @@ export default function Intro() {
               />
             </svg>
           </a>
-          <a className="opacity-70 hover:opacity-90" href="https://twitter.com/fasfashan">
+          <a className=" hover:opacity-90" href="https://twitter.com/fasfashan">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
               <rect width="40" height="40" rx="20" fill="black" />
               <path
@@ -25,9 +25,9 @@ export default function Intro() {
               />
             </svg>
           </a>
-          <a className="opacity-70 hover:opacity-90" href="https://github.com/fasfashan">
+          <a className=" hover:opacity-90" href="https://github.com/fasfashan">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
-              <rect width="40" height="40" rx="20" fill="#191717" />
+              <rect width="40" height="40" rx="20" fill="black" />
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
