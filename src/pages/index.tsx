@@ -23,10 +23,12 @@ export default function Index({ allPosts: { edges }, preview }) {
         <Header />
         <Intro />
         <section className="grid md:grid-cols-12 grid-cols-4 gap-4 items-start">
-          <article className="md:col-span-7 col-span-12">{<ListPost posts={listPost} />}</article>
+          <article className="md:col-span-7 col-span-12">
+            {<ListPost posts={listPost} />}
+            <Button href="/blog">Read more articles</Button>
+          </article>
           <Subscribe />
         </section>
-        <Button href="/blog">Read more articles</Button>
         <SectionSeparator />
         <Footer />
       </Container>
