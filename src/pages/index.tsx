@@ -9,9 +9,11 @@ import Header from "../components/header";
 import ListPost from "../components/list-post";
 import Subscribe from "../components/subscribe";
 import Footer from "../components/footer";
+import SectionSeparator from "../components/section-separator";
+import Button from "../components/button";
 
 export default function Index({ allPosts: { edges }, preview }) {
-  const listPost = edges.slice();
+  const listPost = edges.slice(0, 2);
   return (
     <Layout preview={preview}>
       <Head>
@@ -24,6 +26,8 @@ export default function Index({ allPosts: { edges }, preview }) {
           <article className="md:col-span-7 col-span-12">{<ListPost posts={listPost} />}</article>
           <Subscribe />
         </section>
+        <Button href="/blog">Read more articles</Button>
+        <SectionSeparator />
         <Footer />
       </Container>
     </Layout>

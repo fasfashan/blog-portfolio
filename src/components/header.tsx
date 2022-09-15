@@ -1,5 +1,5 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Link from "next/link";
 import { useRouter } from "next/router";

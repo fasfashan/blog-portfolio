@@ -6,7 +6,8 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "next/future/image";
 import Photo from "../assets/photoprofile.jpg";
-function About(preview) {
+import SectionSeparator from "../components/section-separator";
+export default function About(preview) {
   return (
     <Layout preview={preview}>
       <Head>
@@ -16,7 +17,7 @@ function About(preview) {
         <Header />
         <div className="grid items-baseline mt-20 md:grid-cols-12 grid-cols-4 gap-y-20">
           <div className="md:col-span-7 col-span-12 space-y-4">
-            <h1 className="text-6xl leading-tight font-bold">I’m Fasha Fadillah. I live in Bogor, where I design the future.</h1>
+            <h1 className="md:text-6xl text-4xl leading-tight font-bold">I’m Fasha Fadillah. I live in Bogor, where I design the future.</h1>
             <p className="leading-relaxed text-slate-600 text-sm ">
               I’ve loved making things for as long as I can remember, and wrote my first program when I was 6 years old, just two weeks after my mom brought home the brand new Macintosh LC 550 that I taught myself to type on.
             </p>
@@ -37,9 +38,9 @@ function About(preview) {
             <Image className="aspect-square rotate-3 rounded-2xl  object-cover dark:bg-zinc-800" src={Photo} alt="Fasha" />
           </div>
         </div>
+        <SectionSeparator />
         <Footer />
       </Container>
     </Layout>
   );
 }
-export default About;

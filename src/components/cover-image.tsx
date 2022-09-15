@@ -15,8 +15,8 @@ interface Props {
 export default function CoverImage({ title, coverImage, slug }: Props) {
   const image = (
     <Image
-      width={500}
-      height={500}
+      height={200}
+      width={200}
       alt={`Cover Image for ${title}`}
       src={coverImage?.node.sourceUrl}
       className={cn("shadow-small", {

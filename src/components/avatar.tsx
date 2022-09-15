@@ -6,7 +6,7 @@ export default function Avatar({ author }) {
 
   return (
     <div className="flex items-center">
-      <div className="w-6 h-6 relative mr-2">
+      <div className="w-10 h-10 relative mr-2">
         <Image src={author.node.avatar.url} layout="fill" className="rounded-full" alt={name} />
       </div>
       <div className="text-sm font-bold">{name}</div>

@@ -1,7 +1,6 @@
 import { HiBriefcase } from "react-icons/hi";
-import Link from "next/link";
 import Button from "./button";
-export default function Subscribe() {
+export default function Subscribe(className) {
   return (
     <div className="border shadow-md space-y-4 border-gray-200 p-4 col-span-12 rounded-md md:col-start-9 md:col-end-13 ">
       <div className="flex gap-2  items-center">
